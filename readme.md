@@ -4,7 +4,7 @@ Dessa forma, demonstrado a utilização de adaptadores para consumo de um servi�
 ---
 
 <div align="center">
-  <img src=".github/assets/golang-ports-and-adapters.png" width="400px" />
+  <img src="https://raw.githubusercontent.com/tiagonevestia/go-ports-and-adapters/main/.github/assets/golang-ports-and-adapters.png" width="400px" />
 </div>
 
 ## Script de criação da tabela
