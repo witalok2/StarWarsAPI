@@ -1,13 +1,14 @@
 package cli_test
 
 import (
-	// "fmt"
+	"fmt"
 	"testing"
 
 	"github.com/golang/mock/gomock"
 	"github.com/google/uuid"
-	// "github.com/stretchr/testify/require"
-	// "github.com/witalok2/starwarsplanet/adapters/cli"
+
+	"github.com/stretchr/testify/require"
+	"github.com/witalok2/starwarsplanet/adapters/cli"
 	mock_application "github.com/witalok2/starwarsplanet/application/mocks"
 )
 
@@ -29,10 +30,10 @@ func TestRun(t *testing.T) {
 	service.EXPECT().Create(planetName, planetClimate, planetTerrain, 2).Return(planetMock, nil).AnyTimes()
 	service.EXPECT().Get(planetID).Return(planetMock, nil).AnyTimes()
 
-	// resultExpected := fmt.Sprintf("Planet ID %s with the name %s has been created", planetID, planetName)
-	// result, err := cli.Run(service, "create", uuid.Nil, planetName, planetClimate, planetTerrain)
+	resultExpected := fmt.Sprintf("Planet ID %s with the name %s has been created", planetID, planetName)
+	result, err := cli.Run(service, "create", uuid.Nil, planetName, planetClimate, planetTerrain, 2)
 
-	// require.Nil(t, err)
-	// require.Equal(t, resultExpected, result)
+	require.Nil(t, err)
+	require.Equal(t, resultExpected, result)
 
 }
