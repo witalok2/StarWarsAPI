@@ -5,10 +5,6 @@ import (
 	"github.com/google/uuid"
 )
 
-const (
-	Enabled = "enabled"
-)
-
 type PlanetInterface interface {
 	IsValid() (bool, error)
 
