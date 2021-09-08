@@ -1,5 +1,5 @@
 # Arquitetura Hexagonal "Ports and Adapters"
-Essa implementação tem como objetivo fixar conhecimento adquirido em Arquitetura Hexagonal prática.
+Essa implementação tem como objetivo fixar conhecimento adquirido em Arquitetura Hexagonal.
 Dessa forma, demonstrado a utilização de adaptadores para consumo de um serviço.
 ---
 
